@@ -48,6 +48,5 @@ COPY scripts/daily-digest-scheduler.mjs ./scripts/daily-digest-scheduler.mjs
 RUN chmod +x docker-entrypoint.sh && mkdir -p /data
 
 EXPOSE 3000
-VOLUME ["/data"]
 
 ENTRYPOINT ["./docker-entrypoint.sh"]
